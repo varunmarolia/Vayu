@@ -14,7 +14,7 @@ Since the outside temperature is very low it needs to be heated and filtered bef
 - Proper condensation management and defrosting functions.
 - The system should have wireless capabilities in order to be an IoT device in the future.
 
-![Vayu full assembly](mfg/images/Vayu-assembly-section-view.png "Vayu-assembly-section-view-image")
-![Vayu fan assembly](mfg/images/Vayu-fan_assembly.png "Vayu-fan_assembly-image")
-![Vayu el assembly](mfg/images/Vayu-fan_assembly-electronics.png "Vayu-el-image")
-![Vayu heat accumulator](mfg/images/Vayu-heat-accumulator-module.png "Vayu-heat-accumulator-image")
+![Vayu full assembly](mfg/Images/Vayu-assembly-section-view.png "Vayu-assembly-section-view-image")
+![Vayu fan assembly](mfg/Images/Vayu-fan_assembly.png "Vayu-fan_assembly-image")
+![Vayu el assembly](mfg/Images/Vayu-fan_assembly-electronics.png "Vayu-el-image")
+![Vayu heat accumulator](mfg/Images/Vayu-heat-accumulator-module.png "Vayu-heat-accumulator-image")
