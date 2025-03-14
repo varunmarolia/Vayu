@@ -988,6 +988,29 @@ IEEE 802.15.4 2.4GHz EFR32BG13P732F512GM48 + CC1200 868/915MHz + Onboard LDO TPS
 </device>
 </devices>
 </deviceset>
+<deviceset name="DMN2056U" urn="urn:adsk.eagle:component:24452592/4" prefix="Q" library_version="9">
+<description>&lt;b&gt; Diodes Inc. DMN5056U &lt;/b&gt;
+&lt;p&gt;
+20V N-CHANNEL ENHANCEMENT MODE MOSFET, 4.0 Amp, 38mOhm Rds, Vgth 1.0Volt</description>
+<gates>
+<gate name="A" symbol="N_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="A" pin="D" pad="D"/>
+<connect gate="A" pin="G" pad="G"/>
+<connect gate="A" pin="S" pad="S"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24452588/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="BSS138PW" urn="urn:adsk.eagle:component:27963859/5" prefix="Q" library_version="9">
 <description>BSS138PW
 60 V, 320 mA N-channel Trench MOSFET</description>
@@ -8702,7 +8725,7 @@ SPDT</text>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100K"/>
 <part name="U$12" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="VDD" device=""/>
 <part name="U$14" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1K"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10K"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100K"/>
 <part name="U$15" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="VDD" device=""/>
 <part name="U$16" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
@@ -8711,7 +8734,7 @@ SPDT</text>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47K"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100K"/>
 <part name="R9" library="sensors_iot" library_urn="urn:adsk.eagle:library:24452591" deviceset="R-NTC" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100K"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="470E"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="200K"/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:24452532" deviceset="A3L-LOC-CERN-OHL-P-V2" device="">
 <attribute name="APPROVER" value="Varun M."/>
 <attribute name="DESIGNER" value="Varun M."/>
@@ -8786,30 +8809,30 @@ SPDT</text>
 <part name="TP12" library="test_points" library_urn="urn:adsk.eagle:library:24452641" deviceset="TP_1.2" device="" package3d_urn="urn:adsk.eagle:package:24452648/6"/>
 <part name="U$49" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="Q5" library="transistors-BJT" library_urn="urn:adsk.eagle:library:47380184" deviceset="MMBT4401WT1G" device="" package3d_urn="urn:adsk.eagle:package:47380187/2"/>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="470E"/>
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="200K"/>
 <part name="U$22" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="U$51" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="VDDMAIN" device=""/>
 <part name="U$52" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="U$20" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="VCC_+3.3V" device=""/>
 <part name="U$50" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="VCC_+3.3V" device=""/>
-<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100K"/>
-<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="470K"/>
+<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10K"/>
+<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47K"/>
 <part name="U$53" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="U$54" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="VDD" device=""/>
 <part name="D3" library="diodes" library_urn="urn:adsk.eagle:library:24452503" deviceset="SMF12CA" device="" package3d_urn="urn:adsk.eagle:package:45667746/2"/>
 <part name="U$55" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="Q1" library="mosfets" library_urn="urn:adsk.eagle:library:24452580" deviceset="BSS138PW" device="" package3d_urn="urn:adsk.eagle:package:27963927/2"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1K"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10K"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100K"/>
 <part name="U$13" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="U$56" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
-<part name="Q3" library="mosfets" library_urn="urn:adsk.eagle:library:24452580" deviceset="BSS138PW" device="" package3d_urn="urn:adsk.eagle:package:27963927/2"/>
+<part name="Q3" library="mosfets" library_urn="urn:adsk.eagle:library:24452580" deviceset="DMN2056U" device="" package3d_urn="urn:adsk.eagle:package:24452588/2"/>
 <part name="U$21" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="C-EU" device="C0402S" package3d_urn="urn:adsk.eagle:package:30653319/3" value="1nF"/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="C-EU" device="C0402S" package3d_urn="urn:adsk.eagle:package:30653319/3" value="1nF"/>
 <part name="U$57" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 <part name="U$58" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
-<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1K"/>
+<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:24592432" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10K"/>
 <part name="U$59" library="supply_symbol" library_urn="urn:adsk.eagle:library:24452614" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -9156,8 +9179,8 @@ GPIO</text>
 <instance part="TP8" gate="G$1" x="289.56" y="124.46" smashed="yes">
 <attribute name="NAME" x="287.02" y="127" size="1.27" layer="96"/>
 </instance>
-<instance part="TP9" gate="G$1" x="299.72" y="119.38" smashed="yes">
-<attribute name="NAME" x="297.18" y="121.92" size="1.27" layer="96"/>
+<instance part="TP9" gate="G$1" x="294.64" y="210.82" smashed="yes">
+<attribute name="NAME" x="292.1" y="213.36" size="1.27" layer="96"/>
 </instance>
 <instance part="TP10" gate="G$1" x="289.56" y="116.84" smashed="yes">
 <attribute name="NAME" x="287.02" y="119.38" size="1.27" layer="96"/>
@@ -9300,6 +9323,11 @@ GPIO</text>
 <pinref part="C14" gate="G$1" pin="2"/>
 <pinref part="U$58" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<label x="299.72" y="210.82" size="1.778" layer="95" xref="yes"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<wire x1="294.64" y1="210.82" x2="299.72" y2="210.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="JTAG_SWDIO" class="0">
 <segment>
@@ -9320,9 +9348,9 @@ GPIO</text>
 <segment>
 <pinref part="J3" gate="G$1" pin="4"/>
 <wire x1="284.48" y1="226.06" x2="294.64" y2="226.06" width="0.1524" layer="91"/>
-<label x="342.9" y="226.06" size="2.54" layer="95" xref="yes"/>
+<label x="353.06" y="226.06" size="2.54" layer="95" xref="yes"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
-<wire x1="294.64" y1="226.06" x2="342.9" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="226.06" x2="353.06" y2="226.06" width="0.1524" layer="91"/>
 <junction x="294.64" y="226.06"/>
 </segment>
 <segment>
@@ -9390,26 +9418,6 @@ GPIO</text>
 <pinref part="TP10" gate="G$1" pin="TP"/>
 <wire x1="289.56" y1="116.84" x2="340.36" y2="116.84" width="0.1524" layer="91"/>
 <junction x="289.56" y="116.84"/>
-</segment>
-</net>
-<net name="SERIAL_RTS" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="(5V)PC6-P24"/>
-<wire x1="238.76" y1="119.38" x2="299.72" y2="119.38" width="0.1524" layer="91"/>
-<label x="304.8" y="119.38" size="1.778" layer="95" xref="yes"/>
-<pinref part="TP9" gate="G$1" pin="TP"/>
-<wire x1="299.72" y1="119.38" x2="304.8" y2="119.38" width="0.1524" layer="91"/>
-<junction x="299.72" y="119.38"/>
-</segment>
-</net>
-<net name="SERIAL_CTS" class="0">
-<segment>
-<label x="304.8" y="124.46" size="1.778" layer="95" xref="yes"/>
-<pinref part="TP8" gate="G$1" pin="TP"/>
-<wire x1="289.56" y1="124.46" x2="304.8" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="(5V)I2C1-PC11-P26"/>
-<wire x1="238.76" y1="124.46" x2="289.56" y2="124.46" width="0.1524" layer="91"/>
-<junction x="289.56" y="124.46"/>
 </segment>
 </net>
 <net name="!PUSH_BUTTON_MODE" class="0">
@@ -9533,6 +9541,21 @@ GPIO</text>
 <junction x="129.54" y="165.1"/>
 </segment>
 </net>
+<net name="JTAG_SWO" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="6"/>
+<wire x1="284.48" y1="223.52" x2="325.12" y2="223.52" width="0.1524" layer="91"/>
+<label x="325.12" y="223.52" size="2.54" layer="95" xref="yes"/>
+</segment>
+<segment>
+<label x="304.8" y="124.46" size="1.778" layer="95" xref="yes"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<wire x1="289.56" y1="124.46" x2="304.8" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="(5V)I2C1-PC11-P26"/>
+<wire x1="238.76" y1="124.46" x2="289.56" y2="124.46" width="0.1524" layer="91"/>
+<junction x="289.56" y="124.46"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -9568,6 +9591,26 @@ SMPS_+12V
 
 SMPS_GND
 </text>
+<text x="154.94" y="198.12" size="2.54" layer="94">HA NTC calculations
+Vref = VDDMAIN = 3.0 V
+Beta = 3950
+Temp  Res Kohm   mVolt
+-20      1053.846     2774
+120      4.070           66</text>
+<wire x1="152.4" y1="220.98" x2="152.4" y2="195.58" width="0.508" layer="94"/>
+<wire x1="152.4" y1="195.58" x2="198.12" y2="195.58" width="0.508" layer="94"/>
+<wire x1="198.12" y1="195.58" x2="198.12" y2="220.98" width="0.508" layer="94"/>
+<wire x1="198.12" y1="220.98" x2="152.4" y2="220.98" width="0.508" layer="94"/>
+<text x="332.74" y="48.26" size="2.54" layer="94">BOARD NTC calculations
+Vref = VDDMAIN = 3.0 V
+Beta = 4250
+Temp  Res Kohm   mVolt
+-20      1260.25       2848
+120      3.192            52</text>
+<wire x1="330.2" y1="71.12" x2="330.2" y2="45.72" width="0.508" layer="94"/>
+<wire x1="330.2" y1="45.72" x2="375.92" y2="45.72" width="0.508" layer="94"/>
+<wire x1="375.92" y1="45.72" x2="375.92" y2="71.12" width="0.508" layer="94"/>
+<wire x1="375.92" y1="71.12" x2="330.2" y2="71.12" width="0.508" layer="94"/>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
@@ -9588,7 +9631,7 @@ SMPS_GND
 <attribute name="VALUE" x="199.39" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="Q2" gate="A" x="101.6" y="116.84" smashed="yes" rot="R90">
-<attribute name="VALUE" x="110.49158125" y="95.2442" size="1.778740625" layer="96" rot="R90"/>
+<attribute name="VALUE" x="110.49158125" y="95.2442" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="107.951259375" y="110.4761" size="1.77976875" layer="95" rot="R90"/>
 </instance>
 <instance part="U$4" gate="G$1" x="50.8" y="152.4" smashed="yes">
@@ -9724,7 +9767,7 @@ SMPS_GND
 <attribute name="VALUE" x="142.875" y="100.965" size="1.778" layer="96" ratio="12" rot="R180"/>
 </instance>
 <instance part="Q1" gate="G$1" x="99.06" y="147.32" smashed="yes">
-<attribute name="VALUE" x="109.16" y="139.88" size="1.27" layer="96" rot="R90"/>
+<attribute name="VALUE" x="109.16" y="137.34" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="104.78" y="147.77" size="1.27" layer="95" rot="R90"/>
 </instance>
 <instance part="R3" gate="G$1" x="83.82" y="139.7" smashed="yes" rot="R180">
@@ -9741,8 +9784,8 @@ SMPS_GND
 <instance part="U$56" gate="G$1" x="99.06" y="129.54" smashed="yes">
 <attribute name="VALUE" x="102.235" y="126.365" size="1.778" layer="96" ratio="12" rot="R180"/>
 </instance>
-<instance part="Q3" gate="G$1" x="106.68" y="83.82" smashed="yes">
-<attribute name="VALUE" x="116.78" y="76.38" size="1.27" layer="96" rot="R90"/>
+<instance part="Q3" gate="A" x="106.68" y="83.82" smashed="yes">
+<attribute name="VALUE" x="116.78" y="73.84" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="112.4" y="84.27" size="1.27" layer="95" rot="R90"/>
 </instance>
 <instance part="U$21" gate="G$1" x="106.68" y="68.58" smashed="yes">
@@ -9882,7 +9925,7 @@ SMPS_GND
 <pinref part="U$56" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="G$1" pin="S"/>
+<pinref part="Q3" gate="A" pin="S"/>
 <wire x1="106.68" y1="78.74" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$21" gate="G$1" pin="GND"/>
 </segment>
@@ -9915,7 +9958,7 @@ SMPS_GND
 <wire x1="195.58" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="124.46" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="D"/>
+<pinref part="Q3" gate="A" pin="D"/>
 </segment>
 </net>
 <net name="FAN_SUPPLY" class="0">
@@ -10086,7 +10129,7 @@ SMPS_GND
 <net name="N$2" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="Q3" gate="G$1" pin="G"/>
+<pinref part="Q3" gate="A" pin="G"/>
 <wire x1="96.52" y1="78.74" x2="96.52" y2="81.27" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="81.27" x2="101.55" y2="81.27" width="0.1524" layer="91"/>
 </segment>
